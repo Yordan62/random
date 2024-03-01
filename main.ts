@@ -1,1 +1,5 @@
- 
+tiles.setCurrentTilemap(tilemap`level1`)
+let guy = sprites.create(assets.image`Guy1`, SpriteKind.Player)
+guy.setScale(2, ScaleAnchor.Middle)
+controller.moveSprite(guy)
+scene.cameraFollowSprite(guy)
